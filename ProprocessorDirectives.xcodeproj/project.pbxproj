@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		294AFF3E2D624AD6003490FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 294AFF142D623EA6003490FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 294AFF1B2D623EA6003490FC;
+			remoteInfo = ProprocessorDirectives;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		294AFF1C2D623EA6003490FC /* ProprocessorDirectives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProprocessorDirectives.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		294AFF3A2D624AD5003490FC /* ProprocessorDirectivesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProprocessorDirectivesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = ProprocessorDirectives;
 			sourceTree = "<group>";
 		};
+		294AFF3B2D624AD6003490FC /* ProprocessorDirectivesTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ProprocessorDirectivesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		294AFF192D623EA6003490FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		294AFF372D624AD5003490FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				294AFF1E2D623EA6003490FC /* ProprocessorDirectives */,
+				294AFF3B2D624AD6003490FC /* ProprocessorDirectivesTests */,
 				294AFF1D2D623EA6003490FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				294AFF1C2D623EA6003490FC /* ProprocessorDirectives.app */,
+				294AFF3A2D624AD5003490FC /* ProprocessorDirectivesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 294AFF1C2D623EA6003490FC /* ProprocessorDirectives.app */;
 			productType = "com.apple.product-type.application";
 		};
+		294AFF392D624AD5003490FC /* ProprocessorDirectivesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 294AFF422D624AD6003490FC /* Build configuration list for PBXNativeTarget "ProprocessorDirectivesTests" */;
+			buildPhases = (
+				294AFF362D624AD5003490FC /* Sources */,
+				294AFF372D624AD5003490FC /* Frameworks */,
+				294AFF382D624AD5003490FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				294AFF3F2D624AD6003490FC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				294AFF3B2D624AD6003490FC /* ProprocessorDirectivesTests */,
+			);
+			name = ProprocessorDirectivesTests;
+			packageProductDependencies = (
+			);
+			productName = ProprocessorDirectivesTests;
+			productReference = 294AFF3A2D624AD5003490FC /* ProprocessorDirectivesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					294AFF1B2D623EA6003490FC = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					294AFF392D624AD5003490FC = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 294AFF1B2D623EA6003490FC;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				294AFF1B2D623EA6003490FC /* ProprocessorDirectives */,
+				294AFF392D624AD5003490FC /* ProprocessorDirectivesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		294AFF1A2D623EA6003490FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		294AFF382D624AD5003490FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		294AFF362D624AD5003490FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		294AFF3F2D624AD6003490FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 294AFF1B2D623EA6003490FC /* ProprocessorDirectives */;
+			targetProxy = 294AFF3E2D624AD6003490FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		294AFF282D623EA8003490FC /* Debug */ = {
@@ -310,6 +385,44 @@
 			};
 			name = Release;
 		};
+		294AFF402D624AD6003490FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DU_TEST";
+				PRODUCT_BUNDLE_IDENTIFIER = jca.ProprocessorDirectivesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProprocessorDirectives.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProprocessorDirectives";
+			};
+			name = Debug;
+		};
+		294AFF412D624AD6003490FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZPDPWR8XU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DU_TEST";
+				PRODUCT_BUNDLE_IDENTIFIER = jca.ProprocessorDirectivesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProprocessorDirectives.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProprocessorDirectives";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +440,15 @@
 			buildConfigurations = (
 				294AFF2B2D623EA8003490FC /* Debug */,
 				294AFF2C2D623EA8003490FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		294AFF422D624AD6003490FC /* Build configuration list for PBXNativeTarget "ProprocessorDirectivesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				294AFF402D624AD6003490FC /* Debug */,
+				294AFF412D624AD6003490FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

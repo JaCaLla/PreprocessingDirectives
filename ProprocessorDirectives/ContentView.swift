@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var isRunningTests: Bool {
+        return NSClassFromString("XCTestCase") != nil
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -18,12 +23,17 @@ struct ContentView: View {
         .padding()
         .onAppear() {
             self.foo()
+            self.fee()
+        }
+    }
+    
+    private func fee() {
+        if isRunningTests {
+            print("Executing unit test-specific code")
         }
     }
     
     private func foo() {
-        //let experimentalFeatureEnabled = true
-
         #if EXPERIMENTAL_FEATURE
             print("Experimental feature is enabled")
         #else
