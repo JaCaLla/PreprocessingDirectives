@@ -1,6 +1,6 @@
 
 # Preprocessor directives
-This repository contains a sample iOS application. The app implements a simple iOS app implements some sample prerprocessor directives. This is the base code used in following post [Boost Your iOS Development with Preprocessing Directives](https://javios.eu/swift/harnessing-nfc-technology-in-your-ios-app/) 
+This repository contains a sample iOS application. The app implements a simple iOS app implements some sample prerprocessor directives. This is the base code used in following post [Boost Your iOS Development with Preprocessing Directives](https://javios.eu/swift/boost-your-ios-development-with-preprocessing-directives/) 
 
 ## Requirements
 
